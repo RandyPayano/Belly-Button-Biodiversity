@@ -1,6 +1,6 @@
 # Belly Button Biodiversity
 
-![Bacteria by filterforge.com](https://i.ibb.co/znX52S2/C5.png)
+<center>![Bacteria by filterforge.com](https://i.ibb.co/bX4btQp/vio.jpg)</center>
 
 Build an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
