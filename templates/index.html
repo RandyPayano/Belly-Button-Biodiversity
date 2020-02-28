@@ -10,62 +10,67 @@
   <style>
  
   </style>
+
+
 </head>
 
 <body>
+  <div class="jumbotron"></div>
 
   <div class="container">
-    
+    <img src="https://i.ibb.co/vJtRwRF/bant.jpg">
     <div class="row">
-     <img src="https://i.ibb.co/yQ9TTTk/bannerbelly.jpg">
-
+  </div>
+<br>
 
       <div class="col-md-12 jumbotron text-center">
-
-        
-     <div> <p>The most common skin bacteria encountered on participants in the Belly Button Biodiversity Project belonged to the groups Staphylococci, Corynebacteria, Actinobacteria, Clostridiales, and Bacilli.</p>  </div>
-        <div class="well">
-          <h5>Explore the Dataset!:</h5>
-          <select id="selDataset" onchange="refresh_data(this.value)"></select>
-        </div>
         <div class="row"> </div>
         <div class="col-md-12">
           
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">MetaData Information</h3>
-             
-            <div id="sample-metadata" class="panel-body"></div>
+        
+     <div> <p>The most common skin bacteria encountered on participants in the Belly Button Biodiversity Project belonged to the groups Staphylococci, Corynebacteria, Actinobacteria, Clostridiales, and Bacilli.</p>  </div>
+        </div>
+ 
+     
+     <div class="well">
+          <h5>Explore the Dataset:</h5>
+          <select id="selDataset" onchange="refresh_data(this.value)"></select>
+          <div class="row"> </div>
+          <div class="col-md-12">
+            
+           
+          
+                <h3 class="panel-title">MetaData Information</h3>
+               
+              <div id="sample-metadata" class="panel-body"></div>
+  
+        </div>
 
-
+          </div>
+        </div>
+        </div>
 
             <br>
-            <br>
-            <br>
-
-      
-        <div id="bubble"></div>
-    
-      
          
+         
+         
+          </div>
+          <div class="container">
+            <div class="jumbotron">
+            <div id="bubble"></div></div>
+    
+            <div class="jumbotron">
               <div id="pie"></div>
-            </div>
-          </div>
-          </div>
-         
-         
-          </div>
-      </div>
-    </div>
-    
-    <div id="gauge"></div>
-
-      </div>
-    
-      </div>
+        <div class="col-md-12">
+          
       
-    </div>
-  </div>
+      
+         
+       
+        </div></div>  </div>
+      </div>
+            
+
   
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
@@ -73,5 +78,17 @@
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
 </body>
+<footer><center>© 2020 Randy Payano
+
+  <p>
+    GitHub <a href="https://github.com/RandyPayano/Belly-Button-Biodiversity">
+    <img border="0" alt="" src="https://pairstrading.herokuapp.com/images/notebookgithub.jpg">
+    </a>
+    </p>
+
+ 
+  </center
+
+</footer>
 
 </html>

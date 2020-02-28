@@ -1,21 +1,19 @@
-
-/// Create metadata panel
-function create_metadata(sample) {
-    /// Grab data from route and select div #sample-metadata
+/// Create meta information panel
+function create_metainfo(sample) {
+    
     d3.json(`/metadata/${sample}`).then(function(sample){
-      var metaSample = d3.select(`#sample-metadata`).html(""); 
-    /// clear div
-    metaSample.html("");
-    /// Use `Object.entries` to push data into div
+      var meta_info = d3.select(`#sample-metadata`).html(""); 
+    /// clear element
+    meta_info.html("");
       Object.entries(sample).forEach(function([key,value]){
-        var new_p = metaSample.append("p");
+        var new_p = meta_info.append("p");
         new_p.text(`${key}:${value}`)
       })
     });
 }
 
-/// Create Bubble Chart using sample data
-function create_viz(sample) {
+/// Bubble Chart
+function make_bubble(sample) {
   var vizData = `/samples/${sample}`;
     d3.json(vizData).then(function(data){
       var x_axis = data.otu_ids;
@@ -60,38 +58,22 @@ function create_viz(sample) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function init() {
-  // Grab a reference to the dropdown select element
+ 
   var selector = d3.select("#selDataset");
 
-  /// Populate the select options
-  d3.json("/names").then((sampleNames) => {sampleNames.forEach((sample) => {selector.append("option").text(sample).property("value", sample);});
+  d3.json("/names").then((numberOfSample) => {numberOfSample.forEach((sample) => {selector.append("option").text(sample).property("value", sample);});
 
-    /// Plpt first sample
-    create_viz(sampleNames[0]);
-    create_metadata(sampleNames[0]);
+    make_bubble(numberOfSample[0]);
+    create_metainfo(numberOfSample[0]);
   });
 }
 
-function refresh_data(newSample) {
-  // Fetch new data when drop down menu is used
-  create_viz(newSample);
-  create_metadata(newSample);
+function refresh_data(selectedSample) {
+  // Refresh all data
+  make_bubble(selectedSample);
+  create_metainfo(selectedSample);
 }
 
-
+// Initiate everything
 init();
