@@ -1,13 +1,13 @@
 # Belly Button Biodiversity
 
-![Bacteria by filterforge.com](static//js/Images/bellyimage.jpg)
+# Deployment: https://belly-biodiversity-dash.herokuapp.com/
+
+
 
 Build an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
 * Create a PIE chart to display the top 10 samples.
 
-
-  ![PIE Chart](static//js/Images/belly2.jpg)
 
 * Create a Bubble Chart to display each sample.
 
@@ -17,9 +17,9 @@ Build an interactive dashboard to explore the [Belly Button Biodiversity DataSet
 
 * Update all of the plots any time that a new sample is selected.
 
-![Example Dashboard Page](static//js/Images/dashboard_part1.png)
-![Example Dashboard Page](static//js/Images/dashboard_part2.png)
+  ![PIE Chart](static//js/Images/belly2.jpg)
+![Bacteria by filterforge.com](static//js/Images/bellyimage.jpg)
 
 
-Deploy on Heroku.
+
 
