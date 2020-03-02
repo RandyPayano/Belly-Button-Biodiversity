@@ -7,7 +7,7 @@ Build an interactive dashboard to explore the [Belly Button Biodiversity DataSet
 * Create a PIE chart to display the top 10 samples.
 
 
-  ![PIE Chart](Images/pie_chart.png)
+  ![PIE Chart](static/Images/pie_chart.png)
 
 * Create a Bubble Chart to display each sample.
 
