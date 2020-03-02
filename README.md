@@ -7,18 +7,18 @@ Build an interactive dashboard to explore the [Belly Button Biodiversity DataSet
 * Create a PIE chart to display the top 10 samples.
 
 
-  ![PIE Chart](static/Images/pie_chart.png)
+  ![PIE Chart](static//js/Images/pie_chart.png)
 
 * Create a Bubble Chart to display each sample.
 
-  ![Bubble Chart](Images/bubble_chart.png)
+  ![Bubble Chart](static//js/Images/bubble_chart.png)
 
 * Display the sample metadata 
 
 * Update all of the plots any time that a new sample is selected.
 
-![Example Dashboard Page](Images/dashboard_part1.png)
-![Example Dashboard Page](Images/dashboard_part2.png)
+![Example Dashboard Page](static//js/Images/dashboard_part1.png)
+![Example Dashboard Page](static//js/Images/dashboard_part2.png)
 
 
 Deploy on Heroku.
