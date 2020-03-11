@@ -1,17 +1,16 @@
 # Belly Button Biodiversity
 
-Deployment: https://belly-biodiversity-dash.herokuapp.com/
 
+The purpose of this project is to build a dashboard using data from a study of different bacteria found in people's belly buttons. The data was prepared and sorted on the backend using the Python libraries SQLAlchemy and flask. On the frontend side, plotly.js was used to create all the visualizations in JavaScript. The dashboard has been deployed using Heroku and can be found https://belly-biodiversity-dash.herokuapp.com/.
 
-Built an interactive dashboard to explore the Belly Button Biodiversity DataSet
-
-* Created a PIE chart to display the top 10 samples.
-
-* Created a Bubble Chart to display each sample.
-
-* Displayed the sample metadata 
-
-- Update all of the plots any time that a new sample is selected.
+Technologies
+Python
+JavaScript
+HTML, CSS
+Heroku
+Flask, SQLAlchemy
+Plotly.js
+D3
 
    ![Bacteria by filterforge.com](static//js/Images/bellyimage.jpg)
 
